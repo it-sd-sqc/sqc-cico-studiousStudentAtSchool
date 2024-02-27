@@ -61,4 +61,19 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 ## Expected results
 * Should display "Developer" for the user name.
 
+# Module 5: Add return button after successful scan 
+(while keeping the timeout)
+
+## Test steps
+1. Build and run CiCo
+2. Enter 00000000 into the field and click Update
+3. Press the Return button after successful check-in
+
+## Expected results
+* Should return to the text-field screen after clicking the 
+  Return button, as well as if the button isn't clicked
+  after a certain amount of time 
+
+
+
 

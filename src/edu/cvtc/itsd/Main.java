@@ -107,6 +107,8 @@ public class Main {
   static JLabel labelState;
   static JButton buttonAcknowledge;
 
+  static JButton timeoutButton;
+
   // Timer variables //////////////////////////////////////////////////////////
   static java.util.Timer timer;
   static Timeout timeout;
@@ -289,6 +291,12 @@ public class Main {
     labelState.setForeground(Color.magenta);
     panelStatus.add(labelState);
 
+    timeoutButton = new JButton("Return");
+    timeoutButton.addActionListener(handler);
+    timeoutButton.setAlignmentX(JComponent.CENTER_ALIGNMENT);
+    timeoutButton.setForeground(Color.green);
+    panelStatus.add(timeoutButton);
+
     panelStatus.add(Box.createVerticalGlue());
 
     // Error panel ////////////////////////////////////////////////////////////
@@ -312,6 +320,10 @@ public class Main {
     buttonAcknowledge.setForeground(Color.red);
     panelError.add(buttonAcknowledge);
     panelError.add(Box.createVerticalGlue());
+
+
+
+
 
     // Add the cards //////////////////////////////////////////////////////////
     deck.add(panelMain, CARD_MAIN);
