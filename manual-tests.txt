@@ -61,6 +61,15 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 ## Expected results
 * Should display "Developer" for the user name.
 
+# Module 4: Only accepting numerical input
+
+## Test Steps
+1. Build and run CiCo
+2. Enter abcd into the text field
+
+## Expected results
+* Text field should remain blank and ignore non-numerical input  
+
 # Module 5: Add return button after successful scan 
 (while keeping the timeout)
 
